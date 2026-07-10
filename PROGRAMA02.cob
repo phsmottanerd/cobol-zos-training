@@ -6,7 +6,7 @@
       * Empresa    : XXXXX
       * Objetivo   : Primeiro contato com COBOL
       * Data       : 09/08/2026
-      * Observações: Programa de teste
+      * ObservaÃ§Ãµes: Programa de teste
       *===========================================
 
        ENVIRONMENT DIVISION.
@@ -33,3 +33,47 @@
            STOP RUN.
 
        END PROGRAM HELLO.
+
+
+
+      ******************************************************************
+      * Author:
+      * Date:
+      * Purpose:
+      * Tectonics: cobc
+      ******************************************************************
+       
+       >>SOURCE FORMAT FREE
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       77 WRK-NOME PIC X(30).
+       77 WRK-IDADE PIC 9(03).
+       77 WRK-SALARIO PIC 9(08).
+
+       PROCEDURE DIVISION.
+
+       DISPLAY "DIGITE O SEU NOME: "
+       ACCEPT WRK-NOME
+
+       DISPLAY "DIGITE SUA IDADE: "
+       ACCEPT WRK-IDADE
+
+       DISPLAY "DIGITE SEU SALARIO: "
+       ACCEPT WRK-SALARIO
+
+       DISPLAY "=============================="
+       DISPLAY "NOME: " WRK-NOME
+       DISPLAY "IDADE: " WRK-IDADE
+       DISPLAY "SALARIO: " WRK-SALARIO
+       DISPLAY "=============================="
+
+       STOP RUN.
+
+       END PROGRAM HELLO.
+
+      
